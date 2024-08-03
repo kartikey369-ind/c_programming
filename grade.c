@@ -2,9 +2,8 @@
 
 int main(void)
 {
-    int a;
-    printf("enter score",a);
-    scanf("%d",a);
+    int a = 90;
+
 
 
 
