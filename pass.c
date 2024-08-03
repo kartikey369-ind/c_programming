@@ -1,26 +1,22 @@
 #include <stdio.h>
+#include <ctype.h>
 
 int main(void)
 {
-    float a = b = c = 100 ;
-
-    (a+b+c)/100*100 
-
-
+    char a  = '\0';
+    printf("enter text : ");
+    scanf("%c",&a);
 
 
 
-
-
-
-    if()
+    if(isupper(a))
     {
-        printf("PASS");
+        printf("uppercase\n");
     }
 
-    else ( )
+    else
     {
-        printf("FAIL");
+        printf("lowercase\n");
 
     }
 
