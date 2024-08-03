@@ -2,25 +2,29 @@
 
 int main(void)
 {
-    int a ;
-    printf("enter score",a);
-    scanf("%d",&a);
+    float a = b = c = 100 ;
+
+    (a+b+c)\40
 
 
 
 
-    if(a >= 90 &&  a <= 100)
+
+
+
+
+    if()
     {
-        printf("grade A");
+        printf("PASS");
     }
 
-    else if(a >= 80 && a < 90 )
+    else ( )
     {
-                printf("grade B");
+        printf("FAIL");
 
     }
 
-    
+
 
 
 
