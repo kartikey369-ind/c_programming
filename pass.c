@@ -4,7 +4,7 @@ int main(void)
 {
     float a = b = c = 100 ;
 
-    (a+b+c)\40
+    (a+b+c)/100*100 
 
 
 
