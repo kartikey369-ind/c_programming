@@ -2,35 +2,37 @@
 
 int main(void)
 {
-    int a = 90;
+    int a ;
+    printf("enter score",a);
+    scanf("%d",&a);
 
 
 
 
-    if(int a >= 90 || int a <= 100)
+    if(a >= 90 &&  a <= 100)
     {
         printf("grade A");
     }
 
-    else if(int a >= 80 || int a < 90 )
+    else if(a >= 80 && a < 90 )
     {
                 printf("grade B");
 
     }
 
-    else if(int a >= 70 || int a < 80 )
+    else if(a >= 70 && a < 80 )
     {
         printf("grade C");
 
     }
 
-    else if(int a >= 60 || int a < 70 )
+    else if( a >= 60 && a < 70 )
     {
         printf("grade D");
 
     }
 
-    else if(int a >= 50 || int a < 60 )
+    else if( a >= 50 &&  a < 60 )
     {
         printf("grade E");
 
