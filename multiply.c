@@ -2,13 +2,14 @@
 
 int main(void)
 {
-    int n;
+    int i;
 
-    scanf("%d",&n);
+    scanf("%d",&i);
 
-    for(int i = 10 ; i  ; i-- )
+    while(i <= 10)
     {
-        printf("%d X %d = %d \n",n , i , n*i);
+        printf(" %d \n", i++ );
+        i++;
     }
 
 }
