@@ -31,12 +31,20 @@ int main() {
          printf("OOPS! Your guess is higher than the original number... TRY AGAIN\n");
      }
 
+     else
+     {
+        printf("CONGRATS!you guessed the number in %d guesses\n",no_of_guesses);
+     }
+
+     no_of_guesses++;
+
+
 
 
 
 
      }
-    while(guessed == randomNumber);
+    while(guessed != randomNumber);
     {
         printf("you guessed the number in %d guesses\n",no_of_guesses);
         return 0;
