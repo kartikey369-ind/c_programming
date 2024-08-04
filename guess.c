@@ -10,30 +10,41 @@ int main() {
     int no_of_guesses = 0 ;
     int guessed ;
 
-    int i;
-    printf("ENTER YOUR GUESS : ");
-    scanf("%d",&i);
 
 
 
-    if(i == randomNumber)
+
+   do{
+       printf("ENTER YOUR GUESS : ");
+       scanf("%d",&guessed);
+
+       if(guessed < randomNumber)
     {
-        printf("perfect guess\n");
+               no_of_guesses++;
+                printf("OOPS! Your guess is lower than the original number... TRY AGAIN\n");
+
+    }
+
+     else if(guessed > randomNumber)
+     {
+         no_of_guesses++;
+         printf("OOPS! Your guess is higher than the original number... TRY AGAIN\n");
+     }
+
+
+
+
+
+     }
+    while(guessed == randomNumber);
+    {
+        printf("you guessed the number in %d guesses\n",no_of_guesses);
         return 0;
 
     }
 
 
-    else if(i < randomNumber)
-    {
-                printf("OOPS! Your guess is lower than the original number... TRY AGAIN\n");
 
-    }
-
-     else if(i > randomNumber)
-     {
-         printf("OOPS! Your guess is higher than the original number... TRY AGAIN\n");
-     }
 
 
 
