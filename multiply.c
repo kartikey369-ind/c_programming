@@ -3,13 +3,15 @@
 int main(void)
 {
     int i;
+    int sum=0;
 
     scanf("%d",&i);
 
-    while(i <= 10)
+    for(i = 0 ; sum < i ; i++)
     {
-        printf(" %d \n", i++ );
-        i++;
+        sum = sum + i ;
+        printf(" %d \n", sum );
+
     }
 
 }
