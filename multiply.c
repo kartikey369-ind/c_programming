@@ -2,13 +2,13 @@
 
 int main(void)
 {
-    int n ;
-    printf("enter n %d \n",n);
+    int n;
+
     scanf("%d",&n);
 
-    for(int i = 0 ; i < 10 ; i++ )
+    for(int i = 0 ; i <= 12 ; i++ )
     {
-        printf("the multiplication table is : \n",n*i);
+        printf("%d X %d = %d \n",n , i , n*i);
     }
 
 }
