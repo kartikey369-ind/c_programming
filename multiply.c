@@ -2,16 +2,19 @@
 
 int main(void)
 {
-    int i;
+
     int sum=0;
+    int n ;
+    scanf("%d",&n);
 
-    scanf("%d",&i);
 
-    for(i = 1 ; i < 10 ; i++)
+
+    for(int i = 1 ; i <= n ; i++)
     {
         sum = sum + i ;
-        printf(" %d \n", sum );
+
 
     }
+    printf(" the sum of first %d natural numbers is %d \n", n, sum );
 
 }
