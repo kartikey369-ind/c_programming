@@ -6,7 +6,7 @@ int main(void)
 
     scanf("%d",&n);
 
-    for(int i = 0 ; i <= 12 ; i-- )
+    for(int i = 10 ; i  ; i-- )
     {
         printf("%d X %d = %d \n",n , i , n*i);
     }
