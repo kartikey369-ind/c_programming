@@ -1,7 +1,19 @@
 #include <stdio.h>
 
-int sum(int,int);
-float average(int,int);
+void sum(int,int);
+void average(int,int);
+
+void sum(int a,int b)
+{
+    printf("the sum is %d\n",sum(a, b));
+
+}
+
+void average(int a,int b)
+{
+    printf("the average is %f\n",average(a, b));
+
+}
 
 
 int main(void)
@@ -16,16 +28,6 @@ int main(void)
 
 }
 
-int sum(int a,int b)
-{
-    printf("the sum is %d\n",sum(a, b));
-    return a + b;
-}
 
-float average(int a,int b)
-{
-    printf("the average is %f\n",average(a, b));
-   return (a + b)/2.0 ;
-}
 
 
