@@ -1,22 +1,22 @@
 #include <stdio.h>
 
 int main(void)
+
 {
 
-    int fact = 1;
     int n ;
     printf("enter n : ");
     scanf("%d",&n);
+    int i;
 
-    int i = 1 ;
+    if(n % n == 0 && n % 1 == 0)
+    {
 
-  while(i<=n)
-{
-    fact = fact * i ;
-    i++ ;
+        printf("prime\n");
+    }
+
+    else
+    {
+        printf("not prime\n");
+    }
 }
-
-printf("the factorial of %d is %d \n",n,fact);
-}
-
-
