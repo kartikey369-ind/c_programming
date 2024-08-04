@@ -4,5 +4,7 @@ int main(void)
 {
     int i = 0 ;
 
-    do
+    do{
+        prinf("%d\n")
+    }while(i<20);
 }
