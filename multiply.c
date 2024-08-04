@@ -3,17 +3,15 @@
 int main(void)
 {
 
+    int fact = 0;
 
 
-
-
-
-    for(int i = 1 ; i <=  ; i++)
+    for(int i = 10 ; i <= fact ; i++)
     {
-
+         fact = fact + i ;
 
 
     }
-    printf(" the sum of first %d natural numbers is %d \n", n, sum );
+    printf(" the factorial is %d \n", fact );
 
 }
