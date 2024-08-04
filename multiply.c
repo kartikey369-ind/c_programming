@@ -9,7 +9,7 @@ int main(void)
     scanf("%d",&n);
     int i;
 
-    if(n % n == 0 && n % 1 == 0)
+    if(n / n == 0 && n / 1 == 0)
     {
 
         printf("prime\n");
