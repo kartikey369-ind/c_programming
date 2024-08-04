@@ -4,14 +4,19 @@ int main(void)
 {
 
     int fact = 1;
+    int n ;
+    printf("enter n : ");
+    scanf("%d",&n);
 
+    int i = 1 ;
 
-    for(int i = 1 ; i <= fact ; i++)
-    {
-         fact = fact + i ;
-
-
-    }
-    printf(" the factorial is %d \n", fact );
-
+  while(i<=n)
+{
+    fact = fact * i ;
+    i++ ;
 }
+
+printf("the factorial of %d is %d \n",n,fact);
+}
+
+
