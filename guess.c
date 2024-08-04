@@ -8,8 +8,8 @@ int main() {
     // Generate a random number between 1 and 100
     int randomNumber = rand() % 100 + 1;
     int i;
-    
 
+    printf("Random number between 1 and 100: %d\n", randomNumber);
 
     printf("ENTER YOUR GUESS : ");
     scanf("%d",&i);
