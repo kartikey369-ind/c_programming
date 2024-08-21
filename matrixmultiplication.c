@@ -4,8 +4,8 @@
 int main() {
    int r,c;//for matrix 1
    int ro,co;//for matrix 2
-   int row,col;//for matrix 3
-   int sum=0;
+ 
+   
    //to get rows and columns from user//
    printf("enter rows in 1st matrix:");
    scanf("%d",&r);
@@ -15,9 +15,9 @@ int main() {
   
    
    //initialising the matrix//
-   int matrix[r][c];
-   int matrixx[ro][co];
-   int matrixxx[row][col];
+   int a[r][c];
+   
+   
    
    //to input elemts in matrix 1//
    printf("enter elements in 1st matrix:\n");
@@ -26,7 +26,7 @@ int main() {
    {
        for(int j=0;j<c;j++)
        {
-           scanf("\t%d",&matrix[r][c]);
+           scanf("\t%d",&a[i][j]);
        }
    }
    
@@ -36,18 +36,18 @@ int main() {
    scanf("%d",&co);
    printf("\n");
    
-   
+   int b[ro][co];
    printf("enter elements in 2nd matrix:\n");
    printf("\n");
    for(int i=0;i<ro;i++)
    {
        for(int j=0;j<co;j++)
        {
-           scanf("\t%d",&matrix[ro][co]);
+           scanf("\t%d",&b[i][j]);
        }
    }
    
-   
+    int x[r][co];
    if(c != ro)
    {
        printf("can't multiply");
@@ -58,24 +58,26 @@ int main() {
        {
        for(int j=0;j<co;j++)
           {
-           for(int k=0;k<r;k++)
+           int sum=0;
+           for(int k=0;k<c;k++)
           {
-              int sum=sum+matrix[i][j]*matrixx[k][j];
+              sum=sum+a[i][k]*b[k][j];
           }
-          matrixxx[i][j]=sum;
+          x[i][j]=sum;
        }
        
        }
    }
    
-   
+  
    printf("THE MULTIPLICATION OF MATRIX IS:\n");
-   for(int i=0;i<row;i++)
+   for(int i=0;i<r;i++)
    {
-       for(int j=0;j<col;j++)
+       for(int j=0;j<co;j++)
        {
-           scanf("\t%d",&matrixxx[row][col]);
+           printf("%d ",x[i][j]);
        }
+       printf("\n");
    }
    
    
